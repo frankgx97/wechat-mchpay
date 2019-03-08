@@ -7,8 +7,8 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='wechat_mchpay',
-    version='0.0.6',
-    author='nyanim  ',
+    version='0.0.7',
+    author='nyanim',
     author_email='i@nyan.im',
     url='https://github.com/nyanim/wechat-mchpay',
     description=u'微信支付企业付款SDK',
