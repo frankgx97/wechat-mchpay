@@ -7,7 +7,7 @@ setup(
     version='0.0.1',
     author='nyanim  ',
     author_email='i@nyan.im',
-    url='https://github.com/nyanim/wechat_mchpay',
+    url='https://github.com/nyanim/wechat-mchpay',
     description=u'微信支付企业付款SDK',
     packages=['wechat-mchpay'],
     install_requires=[
