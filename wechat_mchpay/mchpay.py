@@ -10,7 +10,7 @@ import json
 import xmltodict
 
 
-class EnterprisePay:
+class MchPay:
 
     __request_data = {}
 
