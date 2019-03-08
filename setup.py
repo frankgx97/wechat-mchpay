@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
     name='wechat_mchpay',
-    version='0.0.3',
+    version='0.0.5',
     author='nyanim  ',
     author_email='i@nyan.im',
     url='https://github.com/nyanim/wechat-mchpay',
