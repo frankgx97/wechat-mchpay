@@ -58,7 +58,7 @@ class MchPay:
     def send(self):
         """
         发送付款请求
-        :return: 返回一个包含三个元素的数组，分别为：结果（'success'/'fail），错误码，错误信息
+        :return: 返回一个包含四个元素的数组，分别为：结果（'success'/'fail），错误码，错误信息，商户单号
         """
         d = self.__dict_to_xml('xml', self.__request_data)
         d = tostring(d)
@@ -68,7 +68,7 @@ class MchPay:
             cert=(self.__request_data['cert_path'], self.__request_data['key_path'])
         )
         ret = xmltodict.parse(r.text)['xml']
-        result = [ret['result_code'], ret['err_code'], ret['return_msg']]
+        result = [ret['result_code'], ret['err_code'], ret['return_msg'], self.__request_data['partner_trade_no']]
         return result
 
     def __get_current_ip(self):
